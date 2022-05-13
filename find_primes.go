@@ -12,7 +12,7 @@ func find_primes(number int) (result []int) {
 			result = append(result, i)
 		}
 	}
-	if len(result) > 2 { // il numero it is not prime, perchè l'array di divisori del numero avrà lunghezza maggiore di 2
+	if len(result) > 2 { 
 		fmt.Printf("The number %d IS NOT prime\n", number)
 		fmt.Println("This is the list of its divisors: ")
 	} else {
@@ -26,7 +26,7 @@ func find_primes(number int) (result []int) {
 func main() {
 	var user_number int
 	fmt.Scanf("%d", &user_number)
-	var primes []int                  // dichiarata una slice, che in Go ha l funzione e le caratteristiche di una lista (in Python lista definita cosi: [] -> es. l = [1,3,'a'])
-	primes = find_primes(user_number) // passaggio per valore
+	var primes []int                  
+	primes = find_primes(user_number) 
 	fmt.Println(primes)
 }
