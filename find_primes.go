@@ -26,7 +26,7 @@ func find_primes(number int) (result []int) {
 func main() {
 	var user_number int
 	fmt.Scanf("%d", &user_number)
-	var primes []int                  
-	primes = find_primes(user_number) 
+	var divisors  []int                  
+	divisors  = find_primes(user_number) 
 	fmt.Println(primes)
 }
